@@ -4,12 +4,12 @@ import os
 import folium
 
 #Load data
-org_df = os.path.abspath(os.path.join(os.path.dirname(__file__), "Resources", "open_pubs.csv"))
-cleaned_df = os.path.abspath(os.path.join(os.path.dirname(__file__), "resources", "data_cleaned_pub.csv"))
+#org_df = os.path.abspath(os.path.join(os.path.dirname(__file__), "Resources", "open_pubs.csv"))
+#cleaned_df = os.path.abspath(os.path.join(os.path.dirname(__file__), "resources", "data_cleaned_pub.csv"))
 
 # Load the laptop details data from the csv file
-open_pubs = pd.read_csv(org_df)
-df = pd.read_csv(cleaned_df)
+open_pubs = pd.read_csv("open_pubs.csv")
+df = pd.read_csv("data_cleaned_pub.csv")
 
 
 import streamlit as st
